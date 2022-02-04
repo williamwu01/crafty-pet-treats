@@ -1,24 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Estonia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-#main_header {
-border-bottom:2px rgba(0001);
-font-family:"", sans-serif;
-font-weight: 300;
-margin-top: 100px;
-}
+/* General */
 
 body {
+    font-family:"Roboto", sans-serif;
     background-color:rosybrown;
 }
 
-.header-image {
-    background-position: center;
+/* Navigation */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 30px;
+    background: #f6d6d1;
+    box-shadow: 0px 4px 7px #00000026;
+    position: fixed;
+    width: 100%;
+    font-size: 18px;
+    color: #3C3642;
+}
+
+.nav-item:hover {
+    transition: all 0.2s;
+    opacity: 0.8;
+}
+.nav-title {
+    text-transform: uppercase;
+}
+.nav-items {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+}
+
+/* Main Content */
+
+#main_slider {
+    background-image: url( "../images/brandbg.jpg" );
     background-size: cover;
-    background-repeat: no-repeat;
-    border-top: 0;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    min-height: 75vh;
-    padding: 8em 4em 6em 4em;
+    background-position: center;
+    width:auto;
+    height:750px;
+    padding-top: 55px;
+}
+
+.content-wrapper {
+    padding: 75px 30px;
+
 }
